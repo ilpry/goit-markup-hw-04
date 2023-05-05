@@ -533,8 +533,8 @@ button {
   overflow: hidden;
 }
 
-.socials-link:hover,
-.socials-link:focus {
+.footer-socials-link:hover,
+.footer-socials-link:focus {
   background-color: var(--green);
 }
 .socials-icon {
