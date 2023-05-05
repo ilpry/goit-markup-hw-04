@@ -359,17 +359,19 @@ button {
 .team-item {
   background-color: var(--white);
   width: calc((100% - (var(--indent) * 3)) / 4);
+  box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08),
+    0px 1px 1px rgba(46, 47, 66, 0.16), 0px 2px 1px rgba(46, 47, 66, 0.08);
+  border-radius: 0px 0px 4px 4px;;  
 }
 
 .card-content {
-  padding: 32px 16px;
+  padding: 32px 0;
   gap: 8px;
   border-top-left-radius: 0px;
   border-top-right-radius: 0px;
   border-bottom-right-radius: 4px;
   border-bottom-left-radius: 4px;
-  box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08),
-    0px 1px 1px rgba(46, 47, 66, 0.16), 0px 2px 1px rgba(46, 47, 66, 0.08);
+
 }
 
 .team-text {
@@ -411,7 +413,7 @@ button {
 
 .customers-title {
   font-size: 36px;
-  line-height: 1.11;
+  line-height: 1.1;
   text-align: center;
   letter-spacing: 0.02em;
   text-transform: capitalize;
@@ -435,18 +437,20 @@ button {
   justify-content: center;
   width: 168px;
   height: 88px;
-  border: 1px solid #8e8f99;
+  border: 1px solid var(--light-slate);
   border-radius: 4px;
+  color: var(--light-slate);
 }
 
 .clients-link:hover,
 .clients-link:focus {
   border-color: var(--ocean);
+  color: var(--ocean);
 }
 
 .clients-link:hover .clients-icon,
 .clients-link:focus .clients-icon {
-  fill: var(--ocean);
+  fill: currentColor;
 }
 
 /**
@@ -599,5 +603,6 @@ button {
 
 .button-portfolio:hover,
 .button-portfolio:focus {
-  box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 2px 1px rgba(0, 0, 0, 0.08), 0px 2px 2px rgba(0, 0, 0, 0.12);
+  box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 2px 1px rgba(0, 0, 0, 0.08),
+    0px 2px 2px rgba(0, 0, 0, 0.12);
 }
