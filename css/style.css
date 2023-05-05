@@ -120,6 +120,8 @@ button {
 
 .header {
   border-bottom: 1px solid var(--cornflower);
+  box-shadow: 0px 2px 1px rgba(46, 47, 66, 0.08),
+    0px 1px 1px rgba(46, 47, 66, 0.16), 0px 1px 6px rgba(46, 47, 66, 0.08);
 }
 
 .header-container {
@@ -197,6 +199,7 @@ button {
     url(../images/hero-background-image.jpg);
   background-position: center;
   background-size: cover;
+  background-repeat: no-repeat;
   max-width: 1440px;
   height: 600px;
   margin-left: auto;
@@ -474,6 +477,7 @@ button {
 
 .footer-container {
   display: flex;
+  align-items: baseline;
 }
 
 .footer-text {
@@ -530,7 +534,7 @@ button {
   background-color: var(--green);
 }
 .socials-icon {
-  fill: #0b0ba5;
+  fill: var(--cloud);
 }
 
 /**
@@ -591,4 +595,9 @@ button {
 .portfolio-card-link:focus {
   box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08),
     0px 1px 1px rgba(46, 47, 66, 0.16), 0px 2px 1px rgba(46, 47, 66, 0.08);
+}
+
+.button-portfolio:hover,
+.button-portfolio:focus {
+  box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 2px 1px rgba(0, 0, 0, 0.08), 0px 2px 2px rgba(0, 0, 0, 0.12);
 }
